@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ====== SEO Meta Tags ====== -->
+  <!-- 1. Title Tag: Sangat Penting! Harus deskriptif dan mengandung kata kunci -->
+  <title>NZLSTOREOFFICIAL | Official Store Fashion Pria & Wanita | Jaket, Tas, Pakaian</title>
+  <!-- Ganti "Jaket, Tas, Pakaian" dengan jenis produk utama Anda -->
+
+  <!-- 2. Meta Description: Ringkasan menarik untuk hasil pencarian, ajak pengguna klik -->
+  <meta name="description" content="Temukan koleksi terbaru fashion pria & wanita dari NZLSTOREOFFICIAL di official store kami di Shopee, Tokopedia, TikTok Shop, Lazada. Kualitas premium dengan desain stylish. Kunjungi sekarang!" />
+  <!-- Sesuaikan konten deskripsi ini dengan penawaran terbaik Anda -->
+
+  <!-- 3. Meta Keywords (Opsional, tidak sepenting dulu, tapi bisa membantu) -->
+  <meta name="keywords" content="NZLSTOREOFFICIAL, toko fashion, fashion pria, fashion wanita, jaket, tas, pakaian, toko online, Shopee, Tokopedia, TikTok Shop, Lazada" />
+  <!-- Tambahkan kata kunci relevan lainnya yang mungkin dicari pelanggan -->
+
+  <!-- 4. Canonical Tag (Penting jika halaman ini bisa diakses dari URL berbeda) -->
+  <!-- Ganti URL di bawah dengan URL resmi halaman ini -->
+  <!-- <link rel="canonical" href="https://www.alamatwebsiteanda.com/nama-halaman-ini/" /> -->
+  <!-- Hilangkan baris ini jika Anda yakin halaman ini hanya memiliki satu URL -->
+
+  <!-- 5. Meta Author (Opsional) -->
+  <meta name="author" content="NZLSTOREOFFICIAL" />
+  <!-- ====== End SEO Meta Tags ====== -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ==================== */
+    /* --- Global Styles --- */
+    /* ==================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+      --primary-color: #007bff; /* Contoh warna utama */
+      --secondary-color: #6c757d; /* Contoh warna sekunder */
+      --background-light: #f8f9fa;
+      --background-gradient-start: #e0f7fa; /* Biru muda sangat pucat */
+      --background-gradient-end: #f0f2f5; /* Abu-abu muda sangat pucat */
+      --card-background: #ffffff;
+      --text-color-dark: #212529;
+      --text-color-medium: #495057;
+      --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.08);
+      --shadow-medium: 0 8px 20px rgba(0, 0, 0, 0.12);
+      --border-radius-card: 20px;
+      --border-radius-img: 16px;
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--background-gradient-start), var(--background-gradient-end));
+      color: var(--text-color-medium);
+      padding: 20px;
+      overflow-x: hidden;
+      min-height: 100vh; /* Memastikan tinggi minimal body */
+    }
+
+    .container {
+      max-width: 960px; /* Batasi lebar konten utama */
+      margin: 0 auto; /* Pusatkan container */
+      padding: 0 10px; /* Padding di sisi untuk layar kecil */
+    }
+
+    /* ================== */
+    /* --- Header --- */
+    /* ================== */
+    header {
+      text-align: center;
+      margin-bottom: 40px; /* Kurangi margin agar konten lain lebih cepat terlihat */
+      padding-top: 20px; /* Sedikit padding di atas */
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    header img {
+      max-width: 140px; /* Sedikit lebih besar */
+      border-radius: 50%; /* Bentuk bulat */
+      border: 4px solid var(--card-background); /* Border putih */
+      box-shadow: var(--shadow-soft);
+      transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.08); /* Sedikit lebih kecil peningkatannya */
+      box-shadow: var(--shadow-medium);
+      border-color: var(--primary-color); /* Border berubah warna saat hover */
+    }
+
+    /* H1 untuk judul utama halaman, harus deskriptif dan mengandung kata kunci */
+    header h1 {
+      font-size: 2.4rem;
+      margin-top: 20px;
+      margin-bottom: 10px; /* Tambah margin bawah H1 */
+      font-weight: 600;
+      color: var(--text-color-dark);
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    /* Paragraf di bawah H1 untuk instruksi atau deskripsi singkat tambahan */
+    header p {
+        font-size: 1.1rem;
+        color: var(--text-color-medium);
+        margin-bottom: 40px; /* Margin bawah paragraf */
+        animation: fadeIn 1.4s ease forwards;
+    }
+
+
+    /* ==================== */
+    /* --- Store Links --- */
+    /* ==================== */
+    .store-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px; /* Jarak antar item */
+      margin-bottom: 70px; /* Margin bawah lebih */
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .store-links a {
+      background: var(--card-background);
+      padding: 20px 15px; /* Padding diubah */
+      border-radius: var(--border-radius-card);
+      box-shadow: var(--shadow-soft);
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-color-medium);
+      width: 120px; /* Lebar card */
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border: 1px solid transparent; /* Border transparan */
+    }
+
+    .store-links a:hover {
+      transform: translateY(-8px) scale(1.05); /* Efek hover lebih menonjol */
+      box-shadow: var(--shadow-medium);
+      background: var(--background-light); /* Latar sedikit berubah */
+      border-color: var(--primary-color); /* Border muncul dengan warna utama */
+      color: var(--primary-color); /* Warna teks berubah */
+    }
+
+    .store-links img {
+      height: 45px; /* Ukuran icon */
+      margin-bottom: 10px; /* Margin bawah icon */
+    }
+
+    .store-links span {
+      font-weight: 500; /* Teks sedikit lebih tebal */
+      font-size: 1rem;
+    }
+
+
+    /* ===================== */
+    /* --- Products Section --- */
+    /* ===================== */
+    .products-section {
+      text-align: center;
+      margin-bottom: 40px; /* Margin bawah section produk */
+    }
+
+    /* H2 untuk sub-judul, misalnya bagian produk */
+    .products-section h2 {
+      font-size: 2rem; /* Ukuran judul produk */
+      margin-bottom: 40px; /* Margin bawah judul lebih besar */
+      color: var(--text-color-dark);
+      animation: fadeIn 1.3s ease forwards;
+    }
+
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Ukuran item grid sedikit disesuaikan */
+      gap: 20px; /* Jarak antar item grid */
+      padding: 0; /* Hapus padding karena sudah ada container */
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    .product-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--border-radius-img);
+      box-shadow: var(--shadow-soft);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: block; /* Memastikan gambar mengambil lebar penuh grid item */
+    }
+
+    .product-gallery img:hover {
+      transform: scale(1.03); /* Sedikit lebih kecil peningkatannya */
+      box-shadow: var(--shadow-medium);
+    }
+
+    /* ===================== */
+    /* --- Footer --- */
+    /* ===================== */
+     footer {
+       text-align: center;
+       margin-top: 40px;
+       padding: 20px;
+       font-size: 0.9rem;
+       color: var(--secondary-color);
+     }
+
+
+    /* ===================== */
+    /* --- Media Queries --- */
+    /* ===================== */
+    @media (max-width: 768px) {
+       .container {
+          padding: 0 15px; /* Padding sedikit lebih besar di tablet */
+       }
+
+       header h1 {
+         font-size: 1.8rem;
+       }
+        header p {
+            font-size: 1rem;
+        }
+
+       .products-section h2 {
+          font-size: 1.6rem;
+          margin-bottom: 30px;
+       }
+
+       .product-gallery {
+         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Item lebih kecil di tablet */
+         gap: 15px;
+       }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 15px; /* Padding body lebih kecil */
+      }
+
+      .container {
+         padding: 0; /* Hapus padding container di layar kecil */
+      }
+
+      header img {
+        max-width: 110px; /* Logo lebih kecil */
+      }
+
+      header h1 {
+        font-size: 1.6rem; /* H1 lebih kecil */
+        margin-top: 15px;
+      }
+       header p {
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+
+      .store-links {
+        gap: 15px; /* Jarak antar link lebih kecil */
+        margin-bottom: 50px;
+      }
+
+      .store-links a {
+        padding: 15px 10px;
+        width: 100px; /* Lebar card link lebih kecil */
+        border-radius: 15px;
+      }
+
+      .store-links img {
+        height: 40px; /* Ukuran icon link lebih kecil */
+        margin-bottom: 8px;
+      }
+
+      .store-links span {
+          font-size: 0.9rem;
+      }
+
+      .products-section h2 {
+        font-size: 1.4rem; /* H2 produk lebih kecil */
+        margin-bottom: 25px;
+      }
+
+      .product-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Item lebih kecil di hp */
+        gap: 10px;
+        padding: 0 5px; /* Sedikit padding */
+      }
+
+      .product-gallery img {
+         border-radius: 12px;
+      }
+    }
+
+    /* ===================== */
+    /* --- Animations --- */
+    /* ===================== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <!-- Optional: Schema Markup for Organization (Direkomendasikan) -->
+  <!-- Membantu mesin pencari memahami bahwa ini adalah situs web organisasi/bisnis -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NZLSTOREOFFICIAL",
+    "url": "YOUR_WEBSITE_URL_HERE", // Ganti dengan URL situs web Anda
+    "logo": "YOUR_LOGO_URL_HERE", // Ganti dengan URL lengkap logo Anda
+    "description": "Official Store NZLSTOREOFFICIAL - Fashion Pria & Wanita", // Deskripsi singkat
+    "sameAs": [
+      "YOUR_SHOPEE_URL", // Ganti dengan URL Shopee Anda
+      "YOUR_TIKTOK_URL", // Ganti dengan URL TikTok Shop Anda
+      "YOUR_TOKOPEDIA_URL", // Ganti dengan URL Tokopedia Anda
+      "YOUR_LAZADA_URL", // Ganti dengan URL Lazada Anda
+      "YOUR_INSTAGRAM_URL", // Jika punya Instagram, tambahkan
+      "YOUR_FACEBOOK_URL" // Jika punya Facebook, tambahkan
+    ]
+    // Jika ini adalah bisnis lokal, pertimbangkan menambahkan "@type": "LocalBusiness" dengan info alamat dll.
+  }
+  </script>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="logo.jpg" alt="Logo Resmi NZLSTOREOFFICIAL" />
+      <!-- H1 harus mencerminkan judul utama halaman -->
+      <h1>Selamat Datang di NZLSTOREOFFICIAL</h1>
+      <!-- Tambahkan paragraf deskriptif yang mengandung kata kunci -->
+      <p>Temukan koleksi lengkap fashion pria dan wanita terbaru kami. Kami menyediakan jaket, tas, pakaian stylish, dan aksesoris berkualitas premium. Belanja mudah dan aman melalui official store kami di platform marketplace favorit Anda.</p>
+    </header>
+
+    <section class="store-links">
+      <!-- H2 atau Paragraf untuk sub-judul section ini -->
+      <h2 style="font-size: 1.5rem; margin-bottom: 20px; width: 100%; text-align: center; color: var(--text-color-dark);">Pilih Official Store Kami:</h2>
+      <!-- Ganti '#' dengan URL toko Anda yang sebenarnya -->
+      <!-- Tambahkan atribut title untuk deskripsi saat hover (membantu pengguna & sedikit SEO) -->
+      <a href="YOUR_SHOPEE_URL" title="Kunjungi Official Store NZLSTOREOFFICIAL di Shopee" target="_blank"><img src="shopee-icon.png" alt="Icon Shopee" /><span>Shopee</span></a>
+      <a href="YOUR_TIKTOK_URL" title="Kunjungi Official Store NZLSTOREOFFICIAL di TikTok Shop" target="_blank"><img src="tiktok-icon.png" alt="Icon TikTok Shop" /><span>TikTok</span></a>
+      <a href="YOUR_TOKOPEDIA_URL" title="Kunjungi Official Store NZLSTOREOFFICIAL di Tokopedia" target="_blank"><img src="tokopedia-icon.png" alt="Icon Tokopedia" /><span>Tokopedia</span></a>
+      <a href="YOUR_LAZADA_URL" title="Kunjungi Official Store NZLSTOREOFFICIAL di Lazada" target="_blank"><img src="lazada-icon.png" alt="Icon Lazada" /><span>Lazada</span></a>
+      <!-- Untuk WhatsApp, gunakan link wa.me dan tambahkan nomor telepon Anda -->
+      <a href="https://wa.me/NOMORTELEPONANDA?text=Halo%20NZLSTOREOFFICIAL%2C%20saya%20tertarik%20dengan%20produk%20Anda." title="Hubungi NZLSTOREOFFICIAL via WhatsApp" target="_blank"><img src="whatsapp-icon.svg" alt="Icon WhatsApp" /><span>WhatsApp</span></a>
+    </section>
+
+    <section class="products-section">
+      <!-- H2 untuk judul section produk -->
+      <h2>Lihat Beberapa Produk Unggulan Kami</h2>
+      <div class="product-gallery">
+        <!-- Alt text gambar produk harus deskriptif! -->
+        <img src="DSC_1002.JPG" alt="Jaket Bomber Pria NZL Warna Hitam" />
+        <img src="DSC_0856.JPG" alt="Tas Selempang Unisex NZL Gaya Urban" />
+        <img src="DSC_0850.JPG" alt="Kemeja Flanel Pria NZL Lengan Panjang" />
+        <img src="DSC_0836.JPG" alt="Celana Chino Pria NZL Warna Cream" />
+        <img src="DSC_0764.JPG" alt="Hoodie Wanita NZL dengan Logo Bordir" />
+        <img src="DSC_0756.JPG" alt="Sweater Pria NZL Motif Garis" />
+        <img src="DSC_0741.JPG" alt="Kaos Polos Cotton Combed 30s NZL" />
+        <img src="DSC_0260.JPG" alt="Jaket Parka NZL dengan Banyak Saku" />
+        <img src="DSC_0245.JPG" alt="Topi Baseball NZL Logo Klasik" />
+        <!-- Ubah 'alt' text ini agar mendeskripsikan produk sebenarnya di setiap gambar -->
+      </div>
+      <!-- Mungkin tambahkan link ke salah satu toko untuk melihat semua produk -->
+      <p style="margin-top: 30px; font-size: 1.1rem;"><a href="YOUR_MARKETPLACE_STORE_URL" style="text-decoration: none; color: var(--primary-color); font-weight: 500;">Lihat Semua Produk di Official Store Kami →</a></p>
+    </section>
+
+     <footer>
+       © 2023 NZLSTOREOFFICIAL. All rights reserved.
+     </footer>
+
+  </div> <!-- End of .container -->
+
+</body>
+</html>
